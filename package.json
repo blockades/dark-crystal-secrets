@@ -1,0 +1,29 @@
+{
+  "name": "dark-crystal-secrets",
+  "version": "1.0.0",
+  "description": "Dark Crystal's wrapper around Shamir's Secret Shares",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blockades/dark-crystal-secrets.git"
+  },
+  "keywords": [
+    "shamirs",
+    "secret",
+    "shares",
+    "dark-crystal"
+  ],
+  "author": "kyphae",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blockades/dark-crystal-secrets/issues"
+  },
+  "homepage": "https://github.com/blockades/dark-crystal-secrets#readme",
+  "dependencies": {
+    "secrets.js-grempe": "^1.1.0",
+    "sodium-native": "^2.2.4"
+  }
+}
