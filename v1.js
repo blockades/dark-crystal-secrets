@@ -16,8 +16,11 @@ module.exports = {
     return secrets.hex2str(hex)
   },
   verify: function verifyV1 (shards) {
-    try { throw new Error("version 1.0.0 doesn't support secret verification") }
-    catch { return false }
+    try {
+      throw new Error("version 1.0.0 doesn't support secret verification")
+    } catch (err) {
+      return false
+    }
   },
   validateShard: function validateShardV1 (shard) {
     try {
