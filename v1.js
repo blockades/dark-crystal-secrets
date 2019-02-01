@@ -15,6 +15,10 @@ module.exports = {
     const hex = secrets.combine(shards)
     return secrets.hex2str(hex)
   },
+  verify: function verifyV1 (shards) {
+    try { throw new Error("version 1.0.0 doesn't support secret verification") }
+    catch { return false }
+  },
   validateShard: function validateShardV1 (shard) {
     try {
       secrets.extractShareComponents(shard)

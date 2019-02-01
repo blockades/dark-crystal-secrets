@@ -18,6 +18,13 @@ module.exports = {
       default: return false
     }
   },
+  verify: function verify (shards, version) {
+    switch (version) {
+      case '2.0.0': return v2.verify(shards)
+      case '1.0.0': return v1.verify(shards)
+      default: return false
+    }
+  },
   validateShard: function validateShard (shard, version) {
     switch (version) {
       case '2.0.0': return v2.validateShard(shard)
