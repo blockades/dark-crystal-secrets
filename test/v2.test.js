@@ -1,5 +1,5 @@
 const { describe } = require('tape-plus')
-const { share, combine } = require('../v2')
+const { share, combine, verify } = require('../v2')
 
 describe('secrets-wrapper (v2)', context => {
   let secret, numRecps, quorum
@@ -18,6 +18,13 @@ describe('secrets-wrapper (v2)', context => {
       assert.notOk(err, 'does not throw an error')
     }
     assert.equal(result, secret, 'secret recovered')
+    next()
+  })
+
+  context('shards can be used to checksig of a secret', (assert, next) => {
+    const shards = share(secret, numRecps, quorum)
+    var result = verify(shards)
+    assert.ok(result)
     next()
   })
 
