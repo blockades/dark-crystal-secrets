@@ -1,10 +1,12 @@
 # Dark Crystal Secrets
 
-![dark-crystal-logo.jpg](https://darkcrystal.pw/assets/images/darkcrystal-logo.jpg)
-
 [Dark Crystal's](https://darkcrystal.pw) encryption wrapper around Shamir's Secret Shares implementation [`secrets.js-grempe`](https://github.com/grempe/secrets.js).
 
 Using a semantic versioning system, this module also provides backward compatibility to Dark Crystal records out there in the wild. This is required as we incrementally update Dark Crystal's encryption schemes, exploring, experimenting and improving our implementation.
+
+<p align="center">
+  <img src="https://darkcrystal.pw/assets/images/darkcrystal-logo.jpg" width="500" alt="dark-crystal-secrets">
+</p>
 
 ## API
 
